@@ -46,34 +46,16 @@ export default function FeedbackList() {
       setIsLoading(false);
     };
     fetchFeedbackItem();
-
-    // setIsLoading(true);
-    // fetch(
-    //   "https://bytegrad.com/course-assets/projects/corpcomment/api/feedbacks"
-    // )
-    //   .then((response) => {
-    //     if (!response.ok) {
-    //       throw new Error("Something went wrong");
-    //     }
-    //     return response.json();
-    //   })
-    //   .then((data) => {
-    //     setFeedbackItems(data.feedbacks);
-    //     setIsLoading(false);
-    //   })
-    //   .catch(() => {
-    //     setErrorMessage("Something went wrong.");
-    //     setIsLoading(false);
-    //   });
   }, []);
   return (
     <ol className="feedback-list">
-      {isLoading ? <Spinner /> : null}
-      {errorMessage ? <ErrorMessage message={errorMessage} /> : null}
-      {feedbackItems.map((feedbackItem) => (
-        <FeedbackItem feedbackItem={feedbackItem} key={feedbackItem.id} />
+      {isLoading && <Spinner />}
+
+      {errorMessage && <ErrorMessage message={errorMessage} />}
+
+      {feedbackItems.map((feedbackItem, index) => (
+        <FeedbackItem key={index} feedbackItem={feedbackItem} />
       ))}
-      {}
     </ol>
   );
 }
