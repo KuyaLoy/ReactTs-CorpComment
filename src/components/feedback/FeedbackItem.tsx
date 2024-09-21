@@ -14,6 +14,7 @@ export default function FeedbackItem({ feedbackItem }: FeedbackItemProps) {
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     setUpvoteCount((prev) => ++prev);
+    event.currentTarget.disabled = true;
     event.stopPropagation();
   };
 
