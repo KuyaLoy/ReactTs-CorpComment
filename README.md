@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# React TypeScript CorpComment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+CorpComment is a React TypeScript application for posting, managing, and viewing comments. Originally built with JavaScript, this project was fully converted to TypeScript to leverage type safety and modern best practices. It uses Zustand for state management, making the app highly scalable and performant.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **TypeScript**: Fully typed codebase for increased safety and efficiency.
+- **Zustand State Management**: Replaced Context API with Zustand for better state management and improved scalability.
+- **Optimized Performance**: Refined components and rendering, optimizing performance and readability.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Live Site
 
-- Configure the top-level `parserOptions` property like this:
+Check out the live version of the React TypeScript CorpComment:  
+**Live**: https://kuyaloy.github.io/ReactTs-CorpComment/
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Repository
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **React TypeScript** version: https://github.com/KuyaLoy/ReactTs-CorpComment
+- **JavaScript** version: https://github.com/KuyaLoy/Javascript-CorpComment
+
+## How to Run
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/KuyaLoy/ReactTs-CorpComment.git
+   cd ReactTs-CorpComment
+   npm install
+   npm run dev
+   ```
+2. Open http://localhost:5173 in your browser to view the app.
+
+## Commits and Progress
+
+Check the commit history for the documented conversion from JavaScript to React TypeScript and the migration to Zustand.
+
+## Credits
+
+Special thanks to ByteGrad for the inspiration and tutorials.
+
+## Disclaimer
+
+I am an experienced developer, and while I already know many of these concepts, revisiting the basics and integrating advanced practices helps reinforce my skills and inspire others.
